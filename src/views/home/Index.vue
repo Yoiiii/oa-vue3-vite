@@ -3,11 +3,14 @@
 </template>
 
 <script>
+import {useStore} from 'vuex'
 export default {
-  name:"Index",
+  name:"Home",
   setup(){
+    let store = useStore()
     const ENV = import.meta.env
     console.log('ENV',ENV);//获取环境变量
+    console.log(store)
   }
 }
 </script>

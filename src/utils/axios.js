@@ -1,11 +1,11 @@
 import axios from 'axios'
 import router from '@/router/index'
-import config from '~/config'
 import { ElMessage } from 'element-plus'
 import { localGet } from './index'
 
 //根据环境设置baseUrl
-axios.defaults.baseUrl = config[import.meta.env.MODE].baseUrl
+
+axios.defaults.baseUrl =import.meta.env.VITE_BASE_API
 
 //是否携带cookie
 axios.defaults.withCredentials= true

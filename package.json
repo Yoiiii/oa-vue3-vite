@@ -3,18 +3,21 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --mode development",
-    "build:beta": "vite build --mode beta",
-    "build:release": "vite build --mode release",
+    "build:test": "vite build --mode testing",
+    "build:prod": "vite build --mode production",
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "element-plus": "^1.0.2-beta.28",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.6"
+    "vue-router": "^4.0.6",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "scss": "^0.2.4",
     "vite": "^2.3.0",
     "vite-plugin-babel-import": "^2.0.2"
   }
